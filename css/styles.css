@@ -141,12 +141,8 @@ body {
     text-align: center;
 }
 
-.reviews__item__triangle {
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 20px solid #E2E2E2;
+.reviews__item__triangle::after {
+    content: url(/img/Polygon.svg);
     position: relative;
     left: 70px;
 }
@@ -171,4 +167,3 @@ p.name {
 p.text {
     padding-top: 25px;
 }
-
