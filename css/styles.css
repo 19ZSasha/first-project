@@ -31,7 +31,7 @@ body {
 }
 
 .main-btn {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #FFFFFF;
@@ -58,7 +58,7 @@ body {
 }
 
 .header__menu a {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -116,11 +116,29 @@ body {
     margin-left: 30px;
 }
 
-.main__wrapper-btn {
-    display: inline-flex;
-    background-color: #EC7979;
-    margin-bottom: 50px;
 
+.main__form legend {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.main__wrapper-btn .main-btn {
+    padding: 16px 195px;
+    background-color: #EC7979;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+
+.main__form .contact__form__client{
+    width: 370px;
+    padding: 16px 50px;
+    margin-bottom: 36px;
 }
 
 .social {
