@@ -69,7 +69,7 @@ body {
 }
 
 .main {
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/img/main.jpg);  
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/main.jpg);  
 }
 
 .main__container {
@@ -114,6 +114,13 @@ body {
     position: relative;
     margin-top: 207px;
     margin-left: 30px;
+}
+
+.main__wrapper-btn {
+    display: inline-flex;
+    background-color: #EC7979;
+    margin-bottom: 50px;
+
 }
 
 .social {
@@ -260,14 +267,16 @@ body {
     text-align: center;
 }
 
-.reviews__item__triangle::after {
+.reviews__item__text::after {
     content: "";
+    width: 0;
+	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #E2E2E2;
     position: relative;
-    left: 70px;
-    top: 20px;
+    right: 150px;
+    top: 80px;
 }
 
 .reviews__item__manager {
@@ -292,7 +301,7 @@ p.text {
 }
 
 .banner {
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/img/banner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/banner.jpg);
 }
 
 .banner p, .banner h2 {
@@ -306,7 +315,6 @@ p.text {
 .banner__wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 50px;
 }
 
@@ -316,6 +324,67 @@ a.main-btn {
 
 .banner__wrapper .main-btn {
     padding: 16px 141px;
+}
+
+.contact {
+
+}
+
+.contact__form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+}
+
+.contact__form__client {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form .left {
+    width: 571px;
+}
+
+.contact__form .right {
+    width: 569px;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact__form__client input[type="text"],
+.contact__form__client input[type="email"],
+.contact__form__client input[type="password"],
+.contact__form__message textarea { 
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+    border: 0;
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 19px;
+    margin-bottom: 56px;
+
+}
+
+.contact__form textarea {
+    padding-bottom: 192px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__wrapper a.main-btn {
+    display: inline-flex;
+    background-color: #EC7979;
+    margin-bottom: 50px;
+
 }
 
 .footer {
