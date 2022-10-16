@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>мой первый проект</title>
+    <title>AXIT</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/about.css">
@@ -12,22 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="main">
-        <header class="header">
-            <div class="header__conteiner">
-                <div class="header__logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <nav class="header__menu">
-                    <a href="#">Features</a>
-                    <a href="#">About</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Contact</a>
-                </nav>
+    <header class="header">
+        <div class="conteiner">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="logo">
             </div>
-        </header>
-        <div class="main__container">
+            <nav class="header__menu">
+                <a href="#Features">Features</a>
+                <a href="#About">About</a>
+                <a href="#Pricing">Pricing</a>
+                <a href="#Reviews">Reviews</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
             <div class="main__wrapper">
                 <div class="main__item">
                     <img src="img/logomain.svg" alt="logo__main">
@@ -36,30 +36,26 @@
                     <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</p>
                     <a href="#" class="main-btn">Download</a>
                 </div>
-                <div class="main__form">
-                    <legend>Try Your FREE Trial Today</legend>
-                    <fildset>
-                        <div class="contact__form__client">
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                        </div>
-                    </fildset>
-                    <div class="main__wrapper-btn">
-                        <a href="#" class="main-btn">Get Started</a>
+                <form class="main__form">
+                    <h4>Try Your <span>FREE</span> Trial Today</h4>
+                    <div class="main__form__client">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                    <button type="submit" class="main-btn" placeholder="Get Started">Get Started</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
     <section class="social">
-        <div class="social__container">
+        <div class="container">
             <div class="social__wrapper">
                 <div class="social__item">
-                    <p class="social">Social Media</p>
+                    <h4 class="social">Social Media</h4>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Aenean euismod bibendum laoree</p>
                 </div>
-                <nav class="social__nav">
+                <nav class="icon__nav">
                     <a href="#"> <img src="img/facebook_icon.svg" alt="facebook_icon"></a>
                     <a href="#"> <img src="img/twitter_icon.svg" alt="twitter_icon"></a>
                     <a href="#"> <img src="img/linkedin_icon.svg" alt="linkedin_icon"></a>
@@ -71,10 +67,41 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="tabs">
+        <div class="container"> 
+            <div class="tabs__wrapper">
+                <div class="tabs__btn" >
+                    <div class="tabs__nav-btn">
+                        <button tabindex="1">TAB 1</button>
+                        <button tabindex="2">TAB 2</button>
+                        <button tabindex="3">TAB 3</button>
+                    </div>
+                </div>
+                <div class="tabs__line"></div>
+                <div class="tabs__item">
+                    <div class="tabs__text">
+                        <h3>Tabs with soft transitioning effect.</h3>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                            penatibus et magnis dis parturient montes. 
+                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                            bibendum laoreet.</h5>
+                        <div class="tabs__wrapper-btn">
+                            <a href="#" class="main-btn">Download</a>
+                        </div>
+                    </div>
+                    <div class="tabs__img">
+                        <img src="img/Rectangle 111.jpg" alt="tabs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="About">
         <div class="container">
             <div class="container__wrapper">
-                <h2 class="container__title">WHY THIS IS AWESOME</h2>
+                <h4 class="container__title">WHY THIS IS AWESOME</h4>
                 <div class="container__line"></div> 
                 <p class="containet__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -83,27 +110,27 @@
                     <div class="about__item__img">
                         <img src="img/about_icon_1.svg" alt="lightbulb">
                     </div>
-                    <p class="about__item__title">Thoughtful Design</p>
+                    <h4 class="about__item__title">Thoughtful Design</h4>
                     <p class="about__item__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing <br>elit. Aenean euismod bibendum laoreet. <br>Proin gravida dolor sit amet lacus <br>accumsan et viverra.</p>
                 </div>
                 <div class="about__item">
                     <div class="about__item__img">
                         <img src="img/about_icon_2.svg" alt="keyboard">
                     </div>
-                    <p class="about__item__title">Thoughtful Design</p>
+                    <h4 class="about__item__title">Thoughtful Design</h4>
                     <p class="about__item__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing <br>elit. Aenean euismod bibendum laoreet. <br>Proin gravida dolor sit amet lacus <br>accumsan et viverra.</p>
                 </div>
                 <div class="about__item">
                     <div class="about__item__img">
                         <img src="img/about_icon_3.svg" alt="lightning">
                     </div>
-                    <p class="about__item__title">Thoughtful Design</p>
+                    <h4 class="about__item__title">Thoughtful Design</h4>
                     <p class="about__item__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing <br>elit. Aenean euismod bibendum laoreet. <br>Proin gravida dolor sit amet lacus <br>accumsan et viverra.</p>
                 </div>
             </div>   
         </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="Pricing">
         <div class="container">
             <div class="container__wrapper">
                 <h2 class="container__title">PRICING OPTIONS</h2>
@@ -146,7 +173,7 @@
             </div>         
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="Reviews">
         <div class="container">
             <div class="container__wrapper">
                 <h2 class="container__title">what our customers are saying</h2>
@@ -159,7 +186,7 @@
                     <div class="reviews__item__manager">
                         <img src="img/Ellipse_1.png" alt="manager1">
                         <div class="manager">
-                            <p class="name">Davis Rhiel Madsen</p>
+                            <h4 class="name">Davis Rhiel Madsen</h4>
                             <p class="text">Manager</p>
                         </div>
                     </div>
@@ -169,7 +196,7 @@
                     <div class="reviews__item__manager">
                         <img src="img/Ellipse_2.jpg" alt="manager2">
                         <div class="manager">
-                            <p class="name">Jaydon Rosser</p>
+                            <h4 class="name">Jaydon Rosser</h4>
                             <p class="text">Manager</p>
                         </div>
                     </div>
@@ -179,7 +206,7 @@
                     <div class="reviews__item__manager">
                         <img src="img/Ellipse 3.jpg" alt="manager3">
                         <div class="manager">
-                            <p class="name">Cooper Dorwart</p>
+                            <h4 class="name">Cooper Dorwart</h4>
                             <p class="text">Manager</p>
                         </div>
                     </div>
@@ -202,41 +229,31 @@
         </div>
     </section> 
     <section>
-        <div class="contact">
+        <div class="contact" id="Contact">
             <div class="container">
                 <div class="container__wrapper">
                     <h2 class="container__title">contact us</h2>
                     <div class="container__line"></div> 
                     <p class="containet__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <form class="contact__form">
-                    <div class="left">
-                        <fildset>
-                            <div class="contact__form__client">
-                                <input type="text" placeholder="Name">
-                                <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Password">
-                            </div> 
-                        </fildset>
+                <form class="contact__wrapper">
+                    <div class="contact__form">
+                        <div class="contact__form__client">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                        </div> 
+                        <textarea placeholder="Message"></textarea>
                     </div>
-                    <div class="right">
-                        <fieldset>
-                            <div class="contact__form__message">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                        </fieldset>
-                    </div>
+                    <button class="main-btn"> Send Message</button>
                 </form>
-                <div class="contact__wrapper">
-                    <a href="#" class="main-btn">Send Message</a>
-                </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="containe">
             <div class="footer__wrapper">
-                <nav class="footer__nav">
+                <nav class="icon__nav">
                     <a href="#"> <img src="img/facebook_icon.svg" alt="facebook_icon"></a>
                     <a href="#"> <img src="img/twitter_icon.svg" alt="twitter_icon"></a>
                     <a href="#"> <img src="img/linkedin_icon.svg" alt="linkedin_icon"></a>
